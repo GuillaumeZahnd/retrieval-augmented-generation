@@ -1,8 +1,13 @@
+from langchain.messages import AIMessage
 import json
 import ast
 
 
-def get_answer_from_raw_llm_output(raw_output: str) -> str:
+def get_answer_from_raw_llm_output(raw_output: AIMessage) -> str:
+
+    raw_output = raw_output.content
+
+    raw_output = str(raw_output)
 
     raw_output = ast.literal_eval(raw_output)
 
