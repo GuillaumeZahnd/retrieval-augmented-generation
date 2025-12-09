@@ -5,7 +5,7 @@ def instantiate_embedding_model():
 
     model_name = "sentence-transformers/all-mpnet-base-v2"
     model_kwargs = {'device': 'cuda'}
-    encode_kwargs = {'normalize_embeddings': True, "batch_size": 32}
+    encode_kwargs = {'normalize_embeddings': True, "batch_size": 128}
 
     embedding_model = HuggingFaceEmbeddings(
         model_name=model_name,
