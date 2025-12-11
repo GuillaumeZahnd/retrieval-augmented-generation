@@ -1,0 +1,40 @@
+# User query:
+
+how does the working class score victory points (VPs)?
+----------------------------------------------------------------
+# Retrieved chunks:
+
+[0] Game End When the game ends, you get to score a few additional VP: • Check Policies 1-5 in the Politics Table. Depending on the number of Socialist Policies (section A) you gain VP as shown in the following table: • Gain 1 VP for every 10 remaining on your board (up to 15 VP).
+
+
+[1] Game End When the game ends, you get to score a few additional VP: • Check Policies 1-5 in the Politics Table. Depending on the number of Neoliberal Policies (section C), you gain VP as shown in the following table: • Gain 1 VP for every 2 / 3 / 3 / 3 in your Storages (including those in the Free Trade Zone).
+You also lose 5 VP for each Loan you still have.
+
+
+[2] Check Loans The Capitalist Class gets a penalty of -5 VP for each Loan it has. The rest of the players are given a chance to pay off their Loans first. They do so by paying 55 for each Loan they have and discarding the Loan card afterwards. If they can’t afford to pay the full amount, they spend as much as they can in increments of 5 and then they lose 1 VP for every 5 they didn’t pay.
+
+
+[3] Prosperity: This track shows the Working Class’s Prosperity. Prosperity is increased when the Working Class provides Health, Education or Luxury to its people. The higher it is, the more VP the player gains.
+Trade Unions: The Working Class can establish Trade Unions in Industries where many of its Workers are employed. Having a Trade Union provides the player with Influence and additional VP.
+Income: This is where the Working Class keeps its money.
+
+
+[4] • Gain 1 VP for every 15 remaining on your board. Example: It is Claire’s turn in the Pay Taxes step and she wants to calculate her Income Tax. Besides her own Companies, her Workers work in 2 Capitalist Class Companies and in 1 Public Company. Since the Labor Market Policy is at A and Taxation Policy is at C, she will have to pay 3x5 = 15 .
+
+
+----------------------------------------------------------------
+# Alternative queries:
+
+[0] How does the working class get victory points (VPs)?
+[1] What are the different ways the working class can earn victory points (VPs)?
+[2] How does the working class earn victory points (VPs) in the game?
+----------------------------------------------------------------
+# Alternative queries (raw output verification):
+
+**Alternative Query 1:** How does the working class get victory points (VPs)?
+
+
+        **Alternative Query 2:** What are the different ways the working class can earn victory points (VPs)?
+
+
+        **Alternative Query 3:** How does the working class earn victory points (VPs) in the game?

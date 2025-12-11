@@ -1,7 +1,8 @@
+from langchain_core.embeddings import Embeddings
 from langchain_huggingface import HuggingFaceEmbeddings
 
 
-def instantiate_embedding_model():
+def instantiate_embedding_model() -> Embeddings:
 
     model_name = "sentence-transformers/all-mpnet-base-v2"
     model_kwargs = {'device': 'cuda'}

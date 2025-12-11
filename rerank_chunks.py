@@ -1,6 +1,5 @@
 from sentence_transformers import CrossEncoder
 from langchain_core.documents import Document
-from typing import List
 from typing import Tuple
 
 from timer import timer
@@ -10,19 +9,20 @@ from timer import timer
 def rerank_chunks(
         cross_encoder: CrossEncoder,
         query: str,
-        chunks: List[Document],
-        top_k_chunks: int) -> List[Tuple[Document, float]]:
+        chunks: list[Document],
+        top_k_chunks: int) -> list[Tuple[Document, float]]:
     """
-    Rerank and trim a list of Document based on contextual relevance with the query.
+    Rerank and trim a list of Document based on contextual relevance with the query, using a cross-encoder.
+    This operation has a higher precision than the bi-encoder, but is slower and has a lower recall.
 
     Args:
-        cross_encoder: instance of the Cross-Encoder model.
-        query: user query string.
-        chunks: list of candidate documents retrieved from the vector store.
-        top_k_chunks: number of the most relevant documents that must be selected.
+        cross_encoder: Instance of the cross-encoder model.
+        query: User query string.
+        chunks: List of candidate documents retrieved from the vector store.
+        top_k_chunks: Number of the most relevant documents that must be selected.
 
     Returns:
-        List of the top_k_chunks most relevant chunks, sorted by decreasing order of relevance with the query.
+        List of the most relevant chunks, sorted by decreasing relevance with the query, of length (top_k_chunks).
     """
 
     # Associate each chunk to the query to create (query, content) pairs
