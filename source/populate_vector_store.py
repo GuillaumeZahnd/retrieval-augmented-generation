@@ -1,5 +1,5 @@
-from instantiate_embedding_model import instantiate_embedding_model
-from instantiate_vector_store import instantiate_vector_store
+from source.instantiate_embedding_model import instantiate_embedding_model
+from source.instantiate_vector_store import instantiate_vector_store
 
 
 def populate_vector_store(chunks) -> None:

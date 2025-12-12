@@ -1,5 +1,39 @@
+import os
 import re
 import fitz
+import requests
+
+
+def extract_text_from_pdf(url: str) -> str:
+
+    path_to_pdf = "data"
+    filename = "tmp.pdf"
+    _download_pdf(url=url, path_to_pdf=path_to_pdf, filename=filename)
+    text = _read_pdf(path_to_pdf=path_to_pdf, filename=filename)
+
+    return text
+
+
+def _read_pdf(path_to_pdf: str, filename: str) -> str:
+
+    text = []
+    with fitz.open(os.path.join(path_to_pdf, filename)) as document:
+        for page in document:
+            text.append(page.get_text("text").strip())
+    text = "\n".join(text)
+    text = _join_broken_lines(text=text)
+
+    return text
+
+
+def _download_pdf(url: str, path_to_pdf: str, filename: str) -> None:
+
+    if not os.path.exists(path_to_pdf):
+        os.makedirs(path_to_pdf)
+
+    pdf_data = requests.get(url).content
+    with open(os.path.join(path_to_pdf, filename), "wb") as fid:
+        fid.write(pdf_data)
 
 
 def _join_broken_lines(text: str) -> str:
@@ -21,17 +55,5 @@ def _join_broken_lines(text: str) -> str:
     # 3. Clean up extra spacing:
     # Replace multiple spaces with a single space and remove leading/trailing spaces.
     text = re.sub(r'\s{2,}', ' ', text).strip()
-
-    return text
-
-
-def extract_text_from_pdf(path_to_pdf: str) -> str:
-    text = []
-    with fitz.open(path_to_pdf) as document:
-        for page in document:
-            text.append(page.get_text("text").strip())
-    text = "\n".join(text)
-
-    text = _join_broken_lines(text=text)
 
     return text

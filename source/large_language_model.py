@@ -1,10 +1,10 @@
 import os
-from langchain_mistralai import ChatMistralAI
-from langchain.messages import AIMessage
 import json
 import ast
+from langchain_mistralai import ChatMistralAI
+from langchain.messages import AIMessage
 
-from timer import sync_timer
+from source.timer import sync_timer
 
 
 class LargeLanguageModel():

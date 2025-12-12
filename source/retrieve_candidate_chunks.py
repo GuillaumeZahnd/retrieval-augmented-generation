@@ -1,9 +1,9 @@
 from langchain_core.documents import Document
-from vector_database import VectorDatabase
 from typing import Coroutine
 import asyncio
 
-from timer import sync_timer, async_timer
+from source.timer import sync_timer, async_timer
+from source.vector_database import VectorDatabase
 
 
 async def retrieve_candidate_chunks(

@@ -2,7 +2,7 @@ from sentence_transformers import CrossEncoder
 from langchain_core.documents import Document
 from typing import Tuple
 
-from timer import sync_timer
+from source.timer import sync_timer
 
 
 @sync_timer

@@ -3,8 +3,8 @@ import re
 from langchain_community.llms import LlamaCpp
 from langchain_core.documents import Document
 
-from timer import sync_timer
-from log_query_expansion import log_query_expansion
+from source.timer import sync_timer
+from source.log_query_expansion import log_query_expansion
 
 
 class QueryExpansion():

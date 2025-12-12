@@ -1,7 +1,7 @@
 import os
 from langchain_core.documents import Document
 
-from query_expansion import QueryExpansion
+from source.query_expansion import QueryExpansion
 
 
 if __name__ == "__main__":
