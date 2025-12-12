@@ -17,7 +17,7 @@ Application to the boardgame [Hegemony (2023)](https://boardgamegeek.com/image/5
 - **Query:**  how does the working class score victory points (VPs)?
 - **Answer:**  The Working Class scores victory points (VPs) through increasing their Prosperity by providing Health, Education, or Luxury to its people, establishing Trade Unions in Industries where many of its Workers are employed, having Socialist Policies in the Politics Table (section A), and having money remaining on their board at the end of the game (1 VP for every 10 remaining, up to 15 VP).
 
-![hegemony](https://github.com/user-attachments/assets/18b46c8b-f0e7-4090-9256-721579df1e49)
+![hegemony](https://github.com/user-attachments/assets/60e6f09d-fd22-46be-b223-b801b650e90e)
 
 ## Python environment
 
